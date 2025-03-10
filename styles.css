@@ -9,6 +9,7 @@ body{
     max-width: 1520px; /* Largura máxima Full HD */
     margin: 0 auto; /* Centraliza na tela */
     width: 100%; /* Para ocupar 100% da largura disponível */
+    overflow-x: hidden;
 }
 
 .header_nav {
@@ -195,19 +196,65 @@ button:hover{
 
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 450px) {
+    section{
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+
     .banner {
-        flex-direction: column;
-        height: 700px;
+        position: relative;
+        padding: 20px;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 30px;
+        height: 1150px;
     }
-    .banner_img{
-        order: 1;
+    
+    
+    .box{
+        background-image: linear-gradient(45deg, #adadad, #232323);
         position: absolute;
-        top: 250px;
+        bottom: 350px;
+        right: -300px;
+        width: 700px;
+        height: 700px;
+        transform: rotate(20deg);
+        clip-path: inset(0px 0px round 30% 30%);
     }
+    
+    .banner_img img{
+        width: 90vh;
+        position: absolute;
+        bottom: -150px;
+        right: 50px;
+        transform: rotate(-20deg);
+        
+    }
+    
     .banner_text{
-        order: 2;
-        text-align: center;
+        padding-top: 700px;
+        z-index:9;
+    }
+    
+    .banner_text h1, p {
+        color: #232323;
+    }
+    
+    .banner_text h1{
+        font-size: 30px;
+    }
+
+    .banner_text p{
+        width: 90%;
+        white-space: normal;
+    }
+    
+    .banner_text button {
+        background-color: #333;
     }
 }
 
