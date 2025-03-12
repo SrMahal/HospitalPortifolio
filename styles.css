@@ -12,6 +12,45 @@ body{
     overflow-x: hidden;
 }
 
+button{
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #3e8e41;
+}
+
+section{
+    margin: 20px;
+    padding: 20px;
+
+    animation: animateSection 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 45%;
+}
+
+@keyframes animateSection {
+    from{
+        opacity: 0;
+        translate: 100vw 0;
+    }
+    to{
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+/*MENU*/
+
 .header_nav {
     max-width: 1520px;
     width: 80%;
@@ -59,7 +98,17 @@ nav {
     font-family: "Poppins";
     font-weight: 800;
     font-style: normal;
+    display: flex;
+    align-items: center;
 }
+
+.logoheader img{
+    width: 50px;
+    height: 50px;
+    top: 10px;
+    margin-right: 10px;
+}
+
 .nav-list{
     list-style: none;
     display: flex;
@@ -80,43 +129,6 @@ nav {
 
 /* Banner */
 
-section{
-    margin: 20px;
-    padding: 20px;
-
-    animation: animate 1ms ease-in-out;
-    animation-timeline: view();
-    animation-range: cover 0% cover 45%;
-}
-
-@keyframes animate {
-    from{
-        opacity: 0;
-        translate: -100vw 0;
-    }
-    to{
-        opacity: 1;
-        translate: 0 0;
-    }
-}
-
-button{
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    padding: 15px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-button:hover{
-    background-color: #3e8e41;
-}
 
 .banner {
     background-color: #fff;
@@ -132,12 +144,111 @@ button:hover{
 
 .icon{
     position: absolute;
-    background-color: #ff0000;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1), #232323);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    padding: 30px;
     width: 80px;
-    height: 50px;
+    height: 80px;
+    left: 700px;
     border-radius: 50px;
     z-index: 10;
+    /*animate*/
+    animation-name: iconAnimate;
+    animation-timeline: view();
+    animation-range: cover 0% cover 100%;
 }
+@keyframes iconAnimate {
+    0%{
+        bottom: 500px;
+
+    }
+    100%{
+        bottom: 100px;
+    }
+}
+
+.icon img{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+}
+
+.icon2{
+    position: absolute;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1), #232323);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    padding: 30px;
+    width: 80px;
+    height: 80px;
+    left: 1200px;
+    bottom: 650px;
+    border-radius: 50px;
+    z-index: 10;
+    /*animate*/
+    animation-name: iconAnimate2;
+    animation-timeline: view();
+    animation-range: cover 0% cover 100%;
+}
+@keyframes iconAnimate2 {
+    0%{
+        bottom: 350px;
+
+    }
+    100%{
+        bottom: 650px;
+    }
+}
+
+.icon2 img{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+
+}
+
+.icon3{
+    position: absolute;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1), #232323);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    padding: 30px;
+    width: 80px;
+    height: 80px;
+    left: 1000px;
+    bottom: 200px;
+    border-radius: 50px;
+    z-index: 10;
+    /*animate*/
+    animation-name: iconAnimate3;
+    animation-timeline: view();
+    animation-range: cover 0% cover 100%;
+}
+@keyframes iconAnimate3 {
+    0%{
+        bottom: -100px;
+
+    }
+    100%{
+        bottom: 200px;
+    }
+}
+
+.icon3 img{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+
+}
+
+
 .box{
     background-image: linear-gradient(45deg, #adadad, #232323);
     position: absolute;
@@ -228,6 +339,7 @@ button:hover{
 
 .refes {
     background-color: #232323;
+    border-radius: 40px;
        
 }
 
@@ -241,6 +353,12 @@ button:hover{
 .refes img{
     width: 20%;
 
+}
+
+.exp section, h3{
+    background-color: #ff0000;
+    padding: 15px 30px;
+    border-radius: 35px;
 }
 
 @media screen and (max-width: 1300px){
