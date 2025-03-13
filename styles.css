@@ -30,8 +30,13 @@ button:hover{
 }
 
 section{
+<<<<<<< HEAD
     margin: 0px;
     padding: 0px;
+=======
+    margin: 5px;
+    padding: 20px;
+>>>>>>> 61a741e (app)
 
     animation: animateSection 1ms ease-in-out;
     animation-timeline: view();
@@ -362,8 +367,12 @@ nav {
     margin: 25px;
     padding: 15px 30px;
     border-radius: 35px;
+<<<<<<< HEAD
     font-style: italic;
     
+=======
+    font-size: 20px;
+>>>>>>> 61a741e (app)
 }
 
 @media screen and (max-width: 1300px){
