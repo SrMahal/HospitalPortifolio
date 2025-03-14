@@ -1,73 +1,77 @@
-#navbar{
-    width: 100%;
+/*MENU*/
+
+.header_nav {
+    max-width: 1520px;
+    width: 80%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#nav_logo {
-    font-size: 20px;
-    color: #e8e8e8;
-    cursor: pointer;
-}
-
-#nav_list{
-    display: flex;
-    list-style: none;
-    gap: 48px;
-}
-
-.nav_item a {
-    text-decoration: none;
-    color: floralwhite;
-    font-weight: 600;
-}
-
-.nav_item.active a {
-    color: #01f79c;
-    border-bottom: 3px solid #01f79c;
-}
-
-.btn-default {
-    border: none;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: #01f79c;
-    border-radius: 20px;
-    padding: 10 14px;
-    font-weight: 600;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    align-items: center;
+    background-color: rgba(1, 1, 1, 0.3);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 5px 0px;
+    position: fixed;
+    top: -100px;
+    left: 50%; 
+    transform: translateX(-50%);
+    color: white;
+    border-radius: 50px;
+    z-index: 10;
+
+    animation-name: animatenav;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
 }
 
-.btn-default:hover {
-    background-color: #487cf7;
-}
+@keyframes animatenav{
+    0%{
+        top: -100px;
 
-#mobile_btn {
-    display: none;
-}
-
-#mobile_menu {
-    display: none;
-}
-
-@media screen and (max-width: 500px) {
-    #nav_list, .btn-default {
-        display: none;
     }
-    #mobile_btn {
-        display: block;
-        color: #e8e8e8;
-        border: none;
-        background-color: transparent;
-        font-size: 1.5rem;
-        cursor: pointer;
+    100%{
+        top: 25px;
     }
+}
 
-    #mobile_menu.active {
-        display: block;
-    }
+nav {
+    
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+
+}
+.logoheader{
+    font-family: "Poppins";
+    font-weight: 800;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+}
+
+.logoheader img{
+    width: 50px;
+    height: 50px;
+    top: 10px;
+    margin-right: 10px;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-list li {
+
+    margin-left: 25px;
+    margin-right: 25px;
 }

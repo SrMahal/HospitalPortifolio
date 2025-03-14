@@ -1,144 +1,7 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-    font-family: "Poppins";
-    font-size: 25px;
-    line-height: 1.5;
-    overflow-x: hidden;
-    max-width: 1420px; /* Largura máxima Full HD */
-    margin: 0 auto; /* Centraliza na tela */
-    width: 100%; /* Para ocupar 100% da largura disponível */
-    overflow-x: hidden;
-}
-
-button{
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    padding: 15px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-button:hover{
-    background-color: #3e8e41;
-}
-
-section{
-<<<<<<< HEAD
-    margin: 0px;
-    padding: 0px;
-=======
-    margin: 5px;
-    padding: 20px;
->>>>>>> 61a741e (app)
-
-    animation: animateSection 1ms ease-in-out;
-    animation-timeline: view();
-    animation-range: cover 0% cover 45%;
-}
-
-@keyframes animateSection {
-    from{
-        opacity: 0;
-        translate: 100vw 0;
-    }
-    to{
-        opacity: 1;
-        translate: 0 0;
-    }
-}
-
-/*MENU*/
-
-.header_nav {
-    max-width: 1520px;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(1, 1, 1, 0.3);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
-    padding: 5px 0px;
-    position: fixed;
-    top: -100px;
-    left: 50%; 
-    transform: translateX(-50%);
-    color: white;
-    border-radius: 50px;
-    z-index: 10;
-
-    animation-name: animatenav;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-delay: 4s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes animatenav{
-    0%{
-        top: -100px;
-
-    }
-    100%{
-        top: 25px;
-    }
-}
-
-nav {
-    
-    display: flex;
-    align-items: center;
-    width: 80%;
-    justify-content: space-between;
-
-}
-.logoheader{
-    font-family: "Poppins";
-    font-weight: 800;
-    font-style: normal;
-    display: flex;
-    align-items: center;
-}
-
-.logoheader img{
-    width: 50px;
-    height: 50px;
-    top: 10px;
-    margin-right: 10px;
-}
-
-.nav-list{
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-
-.nav-list a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.nav-list li {
-
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
 /* Banner */
-
-
 .banner {
     background-color: #fff;
     position: relative;
-    padding: 20px;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -147,15 +10,15 @@ nav {
     height: 100vh;
 }
 
-.icon{
+.icon1 {
     position: absolute;
     background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1), #232323);
     backdrop-filter: blur(10px);
     color: #fff;
     padding: 30px;
-    width: 80px;
-    height: 80px;
-    left: 700px;
+    width: 45px;
+    height: 45px;
+    left: 500px;
     border-radius: 50px;
     z-index: 10;
     /*animate*/
@@ -173,12 +36,12 @@ nav {
     }
 }
 
-.icon img{
+.icon1 img{
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70px;
+    width: 40px;
 }
 
 .icon2{
@@ -187,10 +50,10 @@ nav {
     backdrop-filter: blur(10px);
     color: #fff;
     padding: 30px;
-    width: 80px;
-    height: 80px;
-    left: 1200px;
-    bottom: 650px;
+    width: 45px;
+    height: 45px;
+    left: 1320px;
+    bottom: 750px;
     border-radius: 50px;
     z-index: 10;
     /*animate*/
@@ -198,6 +61,7 @@ nav {
     animation-timeline: view();
     animation-range: cover 0% cover 100%;
 }
+
 @keyframes iconAnimate2 {
     0%{
         bottom: 350px;
@@ -213,7 +77,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70px;
+    width: 40px;
 
 }
 
@@ -223,10 +87,10 @@ nav {
     backdrop-filter: blur(10px);
     color: #fff;
     padding: 30px;
-    width: 80px;
-    height: 80px;
-    left: 1000px;
-    bottom: 200px;
+    width: 45px;
+    height: 45px;
+    left: 1100px;
+    top: 1000px;
     border-radius: 50px;
     z-index: 10;
     /*animate*/
@@ -236,11 +100,10 @@ nav {
 }
 @keyframes iconAnimate3 {
     0%{
-        bottom: -100px;
-
+        top: 1000px;
     }
     100%{
-        bottom: 200px;
+        top: 1050px;
     }
 }
 
@@ -249,10 +112,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70px;
+    width: 40px;
 
 }
-
 
 .box{
     background-image: linear-gradient(45deg, #adadad, #232323);
@@ -286,6 +148,7 @@ nav {
     bottom: -150px;
     right: 100px;
     transform: rotate(-20deg);
+    /*Animação*/
     animation-name: imgleft;
     animation-duration: 3s;
     animation-delay: 2s;
@@ -296,7 +159,7 @@ nav {
         right: -400px;
     }
     100%{
-        right: 100px;;
+        right: 100px;
     }
 }
 
@@ -340,11 +203,12 @@ nav {
 }
 
 
-
+/* REFERENCIA */
 
 .refes {
     background-image: linear-gradient(45deg, #3b3b3b, #232323);
-    border-radius: 40px;
+    border-radius: 100px;
+    backdrop-filter: blur(10px);
        
 }
 
@@ -352,12 +216,12 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 10px;
-    margin: 100px;
+    padding: 20px 0px;
+    margin: 125px 10px;
 }
 
 .refes img{
-    width: 12%;
+    width: 15%;
     margin: 10px 10px;
 
 }
@@ -367,13 +231,10 @@ nav {
     margin: 25px;
     padding: 15px 30px;
     border-radius: 35px;
-<<<<<<< HEAD
     font-style: italic;
-    
-=======
-    font-size: 20px;
->>>>>>> 61a741e (app)
 }
+
+
 
 @media screen and (max-width: 1300px){
     .box{
@@ -408,11 +269,11 @@ nav {
         margin: 0px;
         padding: 0px;
         overflow-x: hidden;
+        overflow-y: hidden;
     }
 
     .banner {
         position: relative;
-        padding: 20px;
         color: #fff;
         display: flex;
         justify-content: space-between;
@@ -420,12 +281,46 @@ nav {
         border-radius: 30px;
         height: 1150px;
     }
+
+    .banner p {
+        font-size: 20px;
+    }
+    
+    .icon1 {
+        left: 10px;
+        top: 300px;
+        width: 25px;
+        height: 25px;
+    }
+    .icon1 img {
+        width: 30px;
+    }
+
+    .icon2 {
+        left: 320px;
+        top: 200px;
+        width: 25px;
+        height: 25px;
+    }
+    .icon2 img {
+        width: 30px;
+    }
+
+    .icon3 {
+        left: 70px;
+        top: 0px;
+        width: 25px;
+        height: 25px;
+    }
+    .icon3 img {
+        width: 30px;
+    }
     
     
     .box{
         background-image: linear-gradient(45deg, #adadad, #232323);
         position: absolute;
-        bottom: 350px;
+        bottom:  320px;
         right: -300px;
         width: 700px;
         height: 700px;
