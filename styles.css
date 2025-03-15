@@ -1,3 +1,17 @@
+/* Whatsapp Icone*/
+.SectionWhatsapp{
+    position: fixed;
+    z-index: 999;
+}
+
+.IconWhatsapp{
+    background-color: #ff0000;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+
+}
+
 /* Banner */
 .banner {
     background-color: #fff;
@@ -207,6 +221,7 @@
 
 .refes {
     background-image: linear-gradient(45deg, #3b3b3b, #232323);
+    backdrop-filter: blur(10px);
     border-radius: 100px;
     backdrop-filter: blur(10px);
        
@@ -226,15 +241,132 @@
 
 }
 
-.exp section, h3{
+.exp {
     background-image: linear-gradient(45deg, #c3c3c3, #686868);
     margin: 25px;
-    padding: 15px 30px;
-    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+    border-radius: 100px;
     font-style: italic;
 }
 
+.iconexp {
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1), #232323);
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 25px;  
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
 
+.iconexp img{
+    width: 45px;
+}
+
+.h3exp{
+    color: #fff;
+    margin-left: 150px;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.pexp{
+    
+    color: #fff;
+    font-size: 20px;
+}
+
+/* SECTION DEPOMENTOS */
+
+.depoimentos{
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    height: 300px;
+    margin: 5%;
+    padding: 25px;
+}
+
+.depoimentos h2 {
+    position: relative;
+    top: 100px;
+}
+
+.depoimentos p{
+    position: relative;
+    top: 90px;
+}
+
+.depoimentos fotos{
+}
+
+.perfil1 {
+    background-color: #ff0000;
+    position: absolute;
+    left: 15px;
+    border: #fff solid 5px;
+}
+.perfil2 {
+    background-color: #ff0000;
+    position: absolute;
+    left: 50px;
+    border: #fff solid 5px;
+}
+.perfil3 {
+    background-color: #ff0000;
+    position: absolute;
+    left: 90px;
+    border: #fff solid 5px;
+}
+.perfil4 {
+    background-color: #ff0000;
+    position: absolute;
+    left: 120px;
+    border: #fff solid 5px;
+}
+.perfil5 {
+    background-color: #ff0000;
+    position: absolute;
+    left: 150px;
+    border: #fff solid 5px;
+}
+
+
+.depoimentos img {
+    width: 50px;
+    margin: 10px 10px;
+    border-radius: 50%;
+}
+
+
+.iconstar1 {
+    position: absolute;
+    left: 280px;
+}
+.iconstar2 {
+    position: absolute;
+    left: 330px;
+}
+.iconstar3 {
+    position: absolute;
+    left: 380px;
+}
+.iconstar4 {
+    position: absolute;
+    left: 430px;
+}
+.iconstar5 {
+    position: absolute;
+    left: 480px;
+}
+
+
+/*RESPONSIVIDADE*/
 
 @media screen and (max-width: 1300px){
     .box{
