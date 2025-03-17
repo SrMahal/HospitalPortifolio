@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: rgb(232, 232, 232);
     font-family: "Poppins";
     font-size: 25px;
     line-height: 1.5;
@@ -36,13 +36,13 @@ section{
 
     animation: animateSection 1ms ease-in-out;
     animation-timeline: view();
-    animation-range: cover 0% cover 45%;
+    animation-range: cover 0% cover 35%;
 }
 
 @keyframes animateSection {
     from{
         opacity: 0;
-        translate: 100vw 0;
+        translate: 0 100vh;
     }
     to{
         opacity: 1;
