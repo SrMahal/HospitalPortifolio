@@ -1,4 +1,14 @@
 
+body {
+    background-color: rgb(232, 232, 232);
+    font-family: "Poppins";
+    font-size: 25px;
+    max-width: 1420px; /* Largura máxima Full HD */
+    margin: 0 auto; /* Centraliza na tela */
+    width: 80%; /* Para ocupar 100% da largura disponível */
+    overflow-x: hidden;
+}
+
 /* Whatsapp Icone*/
 .SectionWhatsapp{
     position: fixed;
@@ -19,20 +29,17 @@
     position: relative;
     color: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    border-radius: 30px;
     height: 100vh;
-    max-width: 1520px;
-    width: 80%;
 }
 
 
 .box{
     background-image: linear-gradient(45deg, #adadad, #232323);
     position: absolute;
-    bottom: -200px;
-    right: -500px;
+    bottom: -100px;
+    right: -800px;
     width: 1300px;
     height: 1300px;
     transform: rotate(20deg);
@@ -57,8 +64,7 @@
 .banner_text{
     padding: 0px 1px;
     z-index:9;
-    opacity: 0;
-    margin: 25px;
+    margin: 0px;
     
     animation-name: opacidade;
     animation-duration: 5s;
@@ -115,11 +121,8 @@
     }
 }
 
-.banner_text p {
-    color: #232323;
-}
-
 .banner_text p{
+    color: #232323;
     width: 40%;
     white-space: normal;
 }
@@ -404,11 +407,9 @@
 /*RESPONSIVIDADE*/
 
 @media screen and (max-width: 768px) {
-    section{
-        margin: 0px;
-        padding: 0px;
-        overflow-x: hidden;
-        overflow-y: hidden;
+
+    body{
+        width: 100%;
     }
 
     .banner {
@@ -417,78 +418,35 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-radius: 30px;
-        height: 1150px;
+        height: 1200px;
+    }
+
+        .box{
+            position: absolute;
+            bottom:  350px;
+            left: -5%;
+            width: 900px;
+            height: 700px;
+            transform: rotate(20deg);
+            clip-path: inset(0px 0px round 20% 20%);
+        }
+        
+    .banner_img img{
+            width: 100vh;
+            position: absolute;
+            bottom: -170px;
+            left: -180px;
+            transform: rotate(-20deg);
+            
     }
 
     .banner p {
         font-size: 20px;
     }
-    
-    .icon1 {
-        left: 10px;
-        top: 300px;
-        width: 25px;
-        height: 25px;
-    }
-    .icon1 img {
-        width: 30px;
-    }
 
-    .icon2 {
-        left: 320px;
-        top: 200px;
-        width: 25px;
-        height: 25px;
-    }
-    .icon2 img {
-        width: 30px;
-    }
-
-    .icon3 {
-        left: 150px;
-        width: 25px;
-        height: 25px;
-    }
-    .icon3 img {
-        width: 30px;
-    }
-    
-    
-    .box{
-        background-image: linear-gradient(45deg, #adadad, #232323);
-        position: absolute;
-        bottom:  320px;
-        right: -300px;
-        width: 700px;
-        height: 700px;
-        transform: rotate(20deg);
-        clip-path: inset(0px 0px round 30% 30%);
-    }
-    
-    
-
-    .banner_img img{
-        width: 90vh;
-        position: absolute;
-        bottom: -150px;
-        right: 50px;
-        transform: rotate(-20deg);
-        
-    }
-
-    @keyframes imgleft{
-        0%{
-            right: -400px;
-        }
-        100%{
-            right: 50px;;
-        }
-    }
-    
     .banner_text{
         margin: 25px;
-        padding-top: 700px;
+        padding-top: 750px;
         z-index:9;
     }
     
@@ -505,17 +463,63 @@
         white-space: normal;
     }
 
+
+    .icon1 {
+        left: 10px;
+        top: 200px;
+        width: 25px;
+        height: 25px;
+    }
+    .icon1 img {
+        width: 30px;
+    }
+
+    
+    .icon2 {
+        left: 320px;
+        top: 400px;
+        width: 25px;
+        height: 25px;
+    }
+    .icon2 img {
+        width: 30px;
+    }
+
+    .icon3 {
+        left: 150px;
+        width: 25px;
+        height: 25px;
+        top: 650px;
+    }
+    .icon3 img {
+        width: 30px;
+    }
+    
+
+
+    @keyframes imgleft{
+        0%{
+            right: -400px;
+        }
+        100%{
+            right: 50px;;
+        }
+    }
+*/
+    
+/*
     .experiencia {
         flex-direction: column; /* Muda para coluna em telas menores */
         align-items: center; /* Centraliza os itens na coluna */
         width: 100%;
     }
-
+*/
     .exp {
         width: 90%; /* Ajusta a largura para ocupar mais espaço */
         max-width: 350px; /* Define um limite máximo */
         height: auto; /* Deixa a altura flexível */
     }
+*/
 }
 
 
