@@ -12,6 +12,8 @@ body {
 /* Whatsapp Icone*/
 .SectionWhatsapp{
     position: fixed;
+    bottom: 0px;
+    right: 0px;
     z-index: 999;
 }
 
@@ -246,18 +248,15 @@ body {
 .exp {
     width: 250px;
     height: 250px;
-    padding: 50px 50px;
-    border-radius: 100px;
+    padding: 25px 70px;
     background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
-    backdrop-filter: blur(10px);
-    border-radius: 100px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 25px;
 }
 
 .experiencia section {
     background-color: rgba(0, 0, 0, 0.3); /* Certifique-se de que não é totalmente opaco */
-    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
-    border: rgb(203, 203, 203) solid 2px;
-    backdrop-filter: blur(10px);
+    background-image: linear-gradient(45deg, #ffffff80, rgb(225, 225, 225));
 }
 
 .exptitle{
@@ -267,14 +266,14 @@ body {
 }
 
 .exptitle h3{
-    color: #fff;
+    color: #222222;
     margin-left: 70px;
     font-size: 30px;
     font-weight: bold;
 }
 
 .pexp{
-    color: #fff;
+    color: #3d3d3d;
     font-size: 15px;
 }
 
@@ -410,6 +409,10 @@ body {
 
     body{
         width: 100%;
+        overflow-x: hidden;
+    }
+    .header_nav{
+        visibility: hidden;
     }
 
     .banner {
@@ -520,21 +523,13 @@ body {
             right: 50px;;
         }
     }
-*/
-    
-/*
+
     .experiencia {
         flex-direction: column; /* Muda para coluna em telas menores */
         align-items: center; /* Centraliza os itens na coluna */
         width: 100%;
     }
-*/
-    .exp {
-        width: 90%; /* Ajusta a largura para ocupar mais espaço */
-        max-width: 350px; /* Define um limite máximo */
-        height: auto; /* Deixa a altura flexível */
-    }
-*/
+
 }
 
 
