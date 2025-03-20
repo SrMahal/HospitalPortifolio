@@ -429,6 +429,21 @@ body {
             height: 700px;
             transform: rotate(20deg);
             clip-path: inset(0px 0px round 20% 20%);
+            
+            /* Animates */
+            animation-name: open;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+        }
+        
+        @keyframes open {
+            0% {
+                clip-path: inset(700px 700px round 30% 30%);
+            }
+            100%{
+                clip-path: inset(0px 0px round 20% 20%);
+            }
         }
         
     .banner_img img{
