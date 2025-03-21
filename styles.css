@@ -15,12 +15,11 @@ body {
     bottom: 0px;
     right: 0px;
     z-index: 999;
+    margin: 50px;
 }
 
 .IconWhatsapp{
-    background-color: #ff0000;
-    width: 60px;
-    height: 60px;
+    width: 100px;
     bottom: 0;
 
 }
@@ -40,8 +39,8 @@ body {
 .box{
     background-image: linear-gradient(45deg, #adadad, #232323);
     position: absolute;
-    bottom: -100px;
-    right: -800px;
+    bottom: -200px;
+    right: -600px;
     width: 1300px;
     height: 1300px;
     transform: rotate(20deg);
@@ -63,6 +62,28 @@ body {
     }
 }
 
+.banner_img img{
+    width: 130vh;
+    position: absolute;
+    bottom: -250px;
+    right: 200px;
+    transform: rotate(-20deg);
+
+    /*Animação*/
+    animation-name: imgleft;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+@keyframes imgleft{
+    0%{
+        right: -400px;
+    }
+    100%{
+        right: 100px;
+    }
+}
+
 .banner_text{
     padding: 0px 1px;
     z-index:9;
@@ -80,27 +101,6 @@ body {
     }
     100%{
         opacity: 1;
-    }
-}
-
-.banner_img img{
-    width: 130vh;
-    position: absolute;
-    bottom: -150px;
-    right: 100px;
-    transform: rotate(-20deg);
-    /*Animação*/
-    animation-name: imgleft;
-    animation-duration: 3s;
-    animation-delay: 2s;
-}
-
-@keyframes imgleft{
-    0%{
-        right: -400px;
-    }
-    100%{
-        right: 100px;
     }
 }
 
@@ -235,55 +235,46 @@ body {
   }
 
 
+/*Section Exp*/
+
+.sectionExp {
+    display: flex;
+    justify-content: space-between;
+}
+.containerExp {
+    background-image: linear-gradient(45deg, rgba(196, 196, 196, 0.4), rgba(235, 235, 235, 0.8));
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+}
+
+
 /*EXPERIENCIA*/
 .experiencia{
     display: flex;
     position: relative;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 1px;
     flex-wrap: wrap;
-    
-}
-.exp {
-    width: 250px;
-    height: 250px;
-    padding: 25px 70px;
-    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
-    border-radius: 25px;
 }
 
-.experiencia section {
-    background-color: rgba(0, 0, 0, 0.3); /* Certifique-se de que não é totalmente opaco */
-    background-image: linear-gradient(45deg, #ffffff80, rgb(225, 225, 225));
+.exp {
+    border-radius: 50px;
+    width: 19vw;
+    height: 350px;
+
 }
 
 .exptitle{
-    display: flex;
+    display:flex;
+    flex-direction: column;
     align-items: center;
-    
-}
-
-.exptitle h3{
-    color: #222222;
-    margin-left: 70px;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.pexp{
-    color: #3d3d3d;
-    font-size: 15px;
-}
-
-.iconexp img{
-    width: 27px;
 }
 
 .iconexp {
     background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
-    position: absolute;
+    background-color: violet;
     backdrop-filter: blur(5px);
     border: #c3c3c3 solid 1px;
     width: 55px;
@@ -292,17 +283,40 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0px 0px;  
+    margin: 20px 0px;  
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+.experiencia section { 
+    background-image: linear-gradient(45deg, rgba(196, 196, 196, 0.4), rgba(235, 235, 235, 0.8));
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.exptitle h3{
+    background-color: #008c36;
+    color: #222222;
+    font-size: 30px;
+}
+
+.pexp{
+    background-color: rgba(70, 130, 180, 0.5);
+    color: #3d3d3d;
+    margin: 10px 20px;
+    font-size: 15px;
+}
+
+.iconexp img{
+    width: 27px;
+}
 
 /*REFERENCIAS*/
 
 .refes {
-    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
+    background-image: linear-gradient(45deg, rgba(196, 196, 196, 0.4), rgba(235, 235, 235, 0.8));
     backdrop-filter: blur(10px);
-    border-radius: 100px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
     margin-top: 30px;
        
 }
@@ -317,6 +331,10 @@ body {
     justify-content: space-evenly;
     align-items: center;
 }
+
+/* Section Quem sou eu*/
+
+
 
 /* SECTION DEPOMENTOS */
 
@@ -409,10 +427,16 @@ body {
 
     body{
         width: 100%;
-        overflow-x: hidden;
     }
     .header_nav{
         visibility: hidden;
+    }
+
+    .IconWhatsapp{
+        visibility: hidden;
+        width: 100px;
+        bottom: 0;
+    
     }
 
     .banner {
