@@ -40,7 +40,7 @@ body {
     background-image: linear-gradient(45deg, #adadad, #232323);
     position: absolute;
     bottom: -200px;
-    right: -600px;
+    right: -750px;
     width: 1300px;
     height: 1300px;
     transform: rotate(20deg);
@@ -65,8 +65,8 @@ body {
 .banner_img img{
     width: 130vh;
     position: absolute;
-    bottom: -250px;
-    right: 200px;
+    bottom: -200px;
+    right: 400px;
     transform: rotate(-20deg);
 
     /*Animação*/
@@ -127,6 +127,7 @@ body {
     color: #232323;
     width: 40%;
     white-space: normal;
+    font-size: 18px;
 }
 
 .banner_text buttcirc{
@@ -153,7 +154,7 @@ body {
     padding: 30px;
     width: 45px;
     height: 45px;
-    top: 700px;
+    top: 580px;
     left: 500px;
     border-radius: 50px;
     z-index: 10;
@@ -172,8 +173,8 @@ body {
     padding: 30px;
     width: 45px;
     height: 45px;
-    top: 500px;
-    left: 1320px;
+    top: 300px;
+    left: 1120px;
     border-radius: 50px;
     z-index: 10;
 
@@ -197,8 +198,8 @@ body {
     padding: 30px;
     width: 45px;
     height: 45px;
-    top:800px;
-    left: 1100px; 
+    top:700px;
+    left: 900px; 
     border-radius: 50px;
     z-index: 10;
 }
@@ -262,7 +263,7 @@ body {
 .exp {
     border-radius: 50px;
     width: 19vw;
-    height: 350px;
+    height: 400px;
 
 }
 
@@ -273,8 +274,7 @@ body {
 }
 
 .iconexp {
-    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
-    background-color: violet;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1), #232323);
     backdrop-filter: blur(5px);
     border: #c3c3c3 solid 1px;
     width: 55px;
@@ -294,13 +294,11 @@ body {
 }
 
 .exptitle h3{
-    background-color: #008c36;
     color: #222222;
     font-size: 30px;
 }
 
 .pexp{
-    background-color: rgba(70, 130, 180, 0.5);
     color: #3d3d3d;
     margin: 10px 20px;
     font-size: 15px;
@@ -334,7 +332,78 @@ body {
 
 /* Section Quem sou eu*/
 
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 100px 0px;
+}
 
+.textsobre {
+    margin: 0px 25px;
+}
+
+.textsobre h2{
+    color: #008c36;
+}
+
+.textsobre .CRM{
+    color: #008c36;
+}
+
+.textsobre p{
+    color: #3d3d3d;
+    font-size: 18px;
+}
+
+.photosobre {
+    position: relative;
+    clip-path: inset(0px 50px 0px 100px round 25px);
+    height: 500px;
+    width: 600px;
+
+}
+.photosobremedic img{
+    width: 800px;
+    position: relative;
+
+    animation-name: photosobremedic;
+    animation-timeline: view();
+    animation-range: cover 0% cover 100%;
+}
+
+@keyframes photosobremedic {
+    0%{
+        left: 150px;
+    }
+    100%{
+        left: -150px;
+    }
+}
+
+/* section Area de Atuação */
+
+.section_area{
+}
+
+.areabox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.areabox1 {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    padding: 25px;
+    font-size: 18px;
+}
+
+.areabox img{
+    border-radius: 25px;
+    width: 300px;
+}
 
 /* SECTION DEPOMENTOS */
 
