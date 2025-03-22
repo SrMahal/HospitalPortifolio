@@ -256,13 +256,14 @@ body {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    gap: 1px;
+    gap: 10px;
     flex-wrap: wrap;
 }
 
 .exp {
     border-radius: 50px;
     width: 19vw;
+    flex-grow: 1;
     height: 400px;
 
 }
