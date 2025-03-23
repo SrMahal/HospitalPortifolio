@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body{
+    background-color: rgb(47, 47, 47);
+}
+
+.planos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 10px;
+}
+
+
+
+.containerredes{
+    background-image: linear-gradient(45deg, rgb(255, 179, 0), #d400e3);
+    position: relative;
+    height: 400px;
+    border-radius: 25px;
+    margin: 50px 0px;
+}
+
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    width: 500px;
+    height: 300px;
+    
+}
+
+.bannerredes{
+    display: flex;
+    flex-direction: column;
+    margin: 25px 50px;
+}
+
+.cabecario{
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.line{
+    background-color: rgb(112, 112, 112);
+    width: 100%;
+    height: 0.5px;
+}
+
+.redescorpo{
+    margin: 0px 50px;
+}
+
+.redesvalor{
+    margin: 15px 50px;
+}
+
+.buth2{
+    cursor: pointer;
+    color: #fff;
+    top: 15px;
+    text-align: center;
+    margin: 20px 0px;
+    position: relative;
+}
+
+
+
+
+
+/* WEBSITE*/
+.containerweb{
+    background-image: linear-gradient(45deg, rgb(38, 255, 0), #49b700);
+    position: relative;
+    height: 400px;
+    border-radius: 25px;
+}
+
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    width: 500px;
+    height: 300px;
+    
+}
+
+.bannerredes{
+    display: flex;
+    flex-direction: column;
+    margin: 25px 50px;
+}
+
+.cabecario{
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.line{
+    background-color: rgb(112, 112, 112);
+    width: 95%;
+    height: 0.5px;
+}
+
+.redescorpo{
+    margin: 0px 50px;
+}
+
+.redesvalor{
+    margin: 15px 50px;
+}
+
+.buth2{
+    cursor: pointer;
+    color: #fff;
+    top: 15px;
+    text-align: center;
+    margin: 20px 0px;
+    position: relative;
+}
+
+/* WHATSAPP */
+.whatsapp{
+    
+    width: 500px;
+    height: 500px;
+}
