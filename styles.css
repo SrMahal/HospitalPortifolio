@@ -40,7 +40,7 @@ body {
     background-image: linear-gradient(45deg, #adadad, #232323);
     position: absolute;
     bottom: -200px;
-    right: -750px;
+    right: -650px;
     width: 1300px;
     height: 1300px;
     transform: rotate(20deg);
@@ -66,7 +66,7 @@ body {
     width: 130vh;
     position: absolute;
     bottom: -200px;
-    right: 400px;
+    left: -200px;
     transform: rotate(-20deg);
 
     /*Animação*/
@@ -155,7 +155,7 @@ body {
     width: 45px;
     height: 45px;
     top: 580px;
-    left: 500px;
+    left: 50%;
     border-radius: 50px;
     z-index: 10;
     /*animate*/
@@ -174,7 +174,7 @@ body {
     width: 45px;
     height: 45px;
     top: 300px;
-    left: 1120px;
+    left: 90%;
     border-radius: 50px;
     z-index: 10;
 
@@ -199,7 +199,7 @@ body {
     width: 45px;
     height: 45px;
     top:700px;
-    left: 900px; 
+    left: 70%; 
     border-radius: 50px;
     z-index: 10;
 }
@@ -260,18 +260,38 @@ body {
     flex-wrap: wrap;
 }
 
+.experiencia section { 
+    background-image: linear-gradient(45deg, rgba(196, 196, 196, 0.4), rgba(235, 235, 235, 0.8));
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 .exp {
     border-radius: 50px;
-    width: 19vw;
+    width: 200px;
+    height: 350px;
     flex-grow: 1;
-    height: 400px;
-
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0px;
 }
 
 .exptitle{
     display:flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;    
+}
+
+.exptitle h3{
+    color: #222222;
+    font-size: 1.5vw;
+}
+
+.pexp{
+    color: #3d3d3d;
+    margin: 10px 20px;
+    font-size: 0.6vw;
+
 }
 
 .iconexp {
@@ -283,26 +303,8 @@ body {
     border-radius: 50px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 20px 0px;  
+    justify-content: center; 
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.experiencia section { 
-    background-image: linear-gradient(45deg, rgba(196, 196, 196, 0.4), rgba(235, 235, 235, 0.8));
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.exptitle h3{
-    color: #222222;
-    font-size: 30px;
-}
-
-.pexp{
-    color: #3d3d3d;
-    margin: 10px 20px;
-    font-size: 15px;
 }
 
 .iconexp img{
@@ -317,14 +319,13 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 50px;
     margin-top: 30px;
-       
 }
 
 .refes img{
     width: 10%;
     margin: 0px 0px;
-
 }
+
 .referencias{
     display: flex;
     justify-content: space-evenly;
@@ -397,13 +398,20 @@ body {
 .areabox1 {
     background-color: rgb(232, 232, 232);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border: #c3c3c3 solid 0.5px;
+    position: relative;
     border-radius: 25px;
     padding: 25px;
     font-size: 18px;
+
+    transition: all 0.3s ease-in-out;
 }
 
 .areabox1:hover{
-    scale: 1.1;
+    scale: 1.2;
+    top: -20px;
+    transform: rotate3d(1, 1, 2, 10deg);
+    box-shadow: 10px 30px 10px rgba(0, 0, 0, 0.2);
 }
 
 .areabox img{

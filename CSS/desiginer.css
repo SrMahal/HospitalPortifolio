@@ -23,7 +23,7 @@ section{
 
     animation: animateSection 1ms ease-in-out;
     animation-timeline: view();
-    animation-range: cover 0% cover 35%;
+    animation-range: cover 0% cover 30%;
 }
 
 @keyframes animateSection {
