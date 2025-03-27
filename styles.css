@@ -363,7 +363,9 @@ body {
 /* Section Quem sou eu*/
 
 .sobre {
+    background-color: #008c36;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     margin: 100px 0px;
@@ -387,6 +389,7 @@ body {
 }
 
 .photosobre {
+    background-color: tomato;
     position: relative;
     clip-path: inset(0px 50px 0px 100px round 25px);
     height: 500px;
@@ -394,6 +397,7 @@ body {
 
 }
 .photosobremedic img{
+    background-color: violet;
     width: 800px;
     position: relative;
 
@@ -944,12 +948,10 @@ details p {
         width: 100%;
     }
     .header_nav{
-        visibility: hidden;
     }
 
     .IconWhatsapp{
-        visibility: hidden;
-        width: 100px;
+        width: 80px;
         bottom: 0;
     
     }
@@ -961,6 +963,7 @@ details p {
         justify-content: space-between;
         align-items: center;
         height: 1200px;
+        overflow: hidden;
     }
 
         .box{
@@ -1069,11 +1072,38 @@ details p {
         width: 100%;
     }
 
+    /* SOBRE */ 
+
+    .sobre{
+        flex-direction: column;
+    }
+
+    .photosobre{
+        visibility: hidden;
+    }
+
+    /* DEPOIMENTOS */
+
+    .depoimentoscabeca{
+        flex-direction: column;
+    }
+
+
+    /* RODAPÉ */
+
+    footer{
+        flex-direction: column;
+    }
+
+    .partes{
+        flex-direction: column;
+    }
 }
 
 
 
 footer{
+    display: flex;
     background-color: #dfdfdf;
     color: #565656;
     padding: 20px;
