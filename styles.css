@@ -828,13 +828,14 @@ details p {
 }
 
 .depoimentoscabeca{
+    background-color: #008069;
     display: flex;
     justify-content: space-between;
 }
 
 .boxclas{
+    background-color: thistle;
     position: relative;
-    right: -100px;
 }
 
 .depoimentos p{
@@ -1085,12 +1086,6 @@ details p {
         flex-direction: column;
     }
 
-    
-    /* DEPOIMENTOS */
-
-    .depoimentoscabeca{
-        flex-direction: column;
-    }
 
 
     /* RODAPÉ */
