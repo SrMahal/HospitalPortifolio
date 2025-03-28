@@ -7,6 +7,7 @@
 body {
     background-color: rgb(232, 232, 232);
     font-family: "Poppins";
+    overflow-x: hidden;
     
     max-width: 1420px; /* Largura máxima Full HD */
     margin: 0 auto; /* Centraliza na tela */
@@ -53,7 +54,7 @@ body {
     /* Animates */
     animation-name: open;
     animation-duration: 3s;
-    animation-delay: 2s;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
 }
 
@@ -75,16 +76,16 @@ body {
 
     /*Animação*/
     animation-name: imgleft;
-    animation-duration: 3s;
-    animation-delay: 2s;
+    animation-duration: 5s;
+    animation-delay: 1.5s;
 }
 
 @keyframes imgleft{
     0%{
-        right: -400px;
+        left: -400px;
     }
     100%{
-        right: 100px;
+        left: -200;
     }
 }
 
@@ -286,9 +287,9 @@ body {
     display: flex;
     position: relative;
     justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
+    gap: 15px;
+    flex-wrap: nowrap;
+    margin: 50px 15px;
 }
 
 .experiencia section { 
@@ -300,8 +301,8 @@ body {
 
 .exp {
     border-radius: 50px;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 400px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -316,7 +317,8 @@ body {
 
 .exptitle h3{
     color: #222222;
-    font-size: 1.5vw;
+    font-size: 28px;
+    margin: 15px;
 }
 
 .pexp{
@@ -350,55 +352,78 @@ body {
     backdrop-filter: blur(10px);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 50px;
-    margin-top: 30px;
+    margin: 50px 15px;
 }
 
-.refes img{
-    width: 10%;
-    margin: 0px 0px;
-}
 
 .referencias{
     display: flex;
-    justify-content: space-evenly;
+    padding: 0px 50px;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
+
+.refes img{
+    width: 20%;
+}
+
+
 /* Section Quem sou eu*/
+
+.sectionsobre{
+    
+    margin: 50px 15px;
+}
 
 .sobre {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    margin: 100px 0px;
     
 }
 
 .textsobre {
-    margin: 0px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100%;
+    margin: 0px 50px;
 }
 
 .textsobre h2{
     color: #008c36;
+    font-size: 30px;
+}
+
+.textsobre h5{
+    color: #919191;
+    font-size: 20px;
 }
 
 .textsobre .CRM{
     color: #008c36;
+    font-size: 15px;
 }
 
 .textsobre p{
-    color: #3d3d3d;
+    color: #555555;
     font-size: 18px;
+    margin: 15px 0px;
+}
+
+.textsobre button {
+    margin: 0px 0px;
 }
 
 .photosobre {
-    background-color: tomato;
     position: relative;
     /*
     clip-path: inset(0px 50px 0px 100px round 25px);
     */
-    width: 100%px;
+    width: 100%;
 }
 
 
@@ -406,6 +431,7 @@ body {
     background-color: violet;
     width: 100%;
     position: relative;
+    border-radius: 50px;
     overflow-x: hidden;
 }
 
@@ -423,9 +449,13 @@ body {
     }
 }
 
+
+
+
 /* section Area de Atuação */
 
 .section_area{
+    margin: 50px 15px;
 
 }
 
@@ -435,11 +465,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0px 25px;
+}
+
+.areatitle h1{
+    font-size: 30px;
 }
 
 .areatitle p{
-    width: 25%;
+    width: 20%;
     font-size: 12px;
 }
 
@@ -454,7 +487,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    gap: 15px;
+    
 }
 
 .areabox1 {
@@ -465,9 +500,17 @@ body {
     border-radius: 50px;
     padding: 25px;
     font-size: 18px;
+    width: 32%;
+    max-width: 350px;
 
     transition: all 0.3s ease-in-out;
 }
+.areabox img{
+    border-radius: 50px 50px 150px 50px;
+    width: 300px;
+    
+}
+
 
 .areabox1:hover{
     scale: 1.2;
@@ -494,11 +537,6 @@ body {
     z-index: 3;
 }
 
-.areabox img{
-    border-radius: 50px 50px 150px 50px;
-    width: 300px;
-    
-}
 
 
 .areaboxborda{
@@ -543,6 +581,7 @@ body {
     top: 25px;
     display: flex;
     align-items: center;
+    flex-direction: row;
     justify-content: space-between;
     margin: 0px 25px;
 }
@@ -949,20 +988,35 @@ details p {
     font-size: 50px;
 }
 
-/*RESPONSIVIDADE*/
+@media screen and (max-width: 1280px){
+    body{
+    }
+}
+
+/*RESPONSIVIDADE > 768px*/
 
 @media screen and (max-width: 768px) {
+
+    /* Corpo */
 
     body{
         width: 100%;
     }
 
+    /* ICON WHATSAPP*/
+    .SectionWhatsapp{
+        bottom: -30px;
+        right: -30px;
+    }
 
+
+    
     .IconWhatsapp{
-        width: 80px;
-        bottom: 0;
+        width: 70px;
     
     }
+
+    /* BANNER */
 
     .banner {
         position: relative;
@@ -974,39 +1028,52 @@ details p {
         overflow: hidden;
     }
 
-        .box{
-            position: absolute;
-            bottom:  350px;
-            left: -5%;
-            width: 900px;
-            height: 700px;
-            transform: rotate(20deg);
-            clip-path: inset(0px 0px round 20% 20%);
-            
-            /* Animates */
-            animation-name: open;
-            animation-duration: 3s;
-            animation-delay: 2s;
-            animation-fill-mode: forwards;
-        }
+    .box{
+        position: absolute;
+        bottom:  350px;
+        left: -5%;
+        width: 900px;
+        height: 700px;
+        transform: rotate(20deg);
+        clip-path: inset(0px 0px round 20% 20%);
         
-        @keyframes open {
-            0% {
-                clip-path: inset(700px 700px round 30% 30%);
-            }
-            100%{
-                clip-path: inset(0px 0px round 20% 20%);
-            }
+        /* Animates */
+        animation-name: open;
+        animation-duration: 3s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes open {
+        0% {
+            clip-path: inset(700px 700px round 30% 30%);
         }
+        100%{
+            clip-path: inset(0px 0px round 20% 20%);
+        }
+    }
         
     .banner_img img{
-            width: 100vh;
-            position: absolute;
-            bottom: -170px;
-            left: -180px;
-            transform: rotate(-20deg);
-            
+        width: 100vh;
+        position: absolute;
+        bottom: -80px;
+        left: -150px;
+        transform: rotate(-20deg);
+            /*Animação*/
+        animation-name: imgleft;
+        animation-duration: 3s;
+        animation-delay: 3s;
     }
+
+    @keyframes imgleft{
+    0%{
+        left: -400px;
+    }
+    100%{
+        left: -150;
+    }
+    }
+            
 
     .banner p {
         font-size: 20px;
@@ -1074,18 +1141,71 @@ details p {
         }
     }
 
+    /* EXPERIÊNCIA */
+
     .experiencia {
         flex-direction: column; /* Muda para coluna em telas menores */
         align-items: center; /* Centraliza os itens na coluna */
         width: 100%;
+        flex-wrap: nowrap;
+    }
+
+    .exp{
+        height: 100%;
     }
 
     /* SOBRE */ 
 
     .sobre{
         flex-direction: column;
+        
     }
 
+    .textsobre {
+        margin: 0px 25px;
+    }
+
+    /* Section Area */
+
+    .areatitle {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .areatitle h1 {
+
+    }
+
+    .areatitle p {
+        width: 80%;
+    }
+
+    /* Section Area */
+
+    .areabox{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .areabox1{
+        width: 100%;
+    }
+
+
+
+    /* DUVIDAS FREQUENTES */
+
+    .faqtitle{
+        position: relative;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+    }
+    
+    .faqtitle p{
+        width: 80%;
+        font-size: 12px;
+    }
 
 
     /* RODAPÉ */
